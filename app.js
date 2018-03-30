@@ -19,8 +19,7 @@ mongoose.connection.once('open',() => {
 
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname+'/Web/index.html'));
-   
+    res.sendFile(path.join(__dirname+'/Web/index.html')); 
 })
 
 app.get('/posta/obec/:obec',(req,res) => {
